@@ -1,0 +1,20 @@
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+
+        .btn-login{
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .input {
+            margin-top: 5px;
+        }
+
+        .btn-register{
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }

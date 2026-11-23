@@ -1,11 +1,18 @@
-# -> Sistema de autenticação
-# -> API Rest
+### Trilha: *Bases Técnicas* - Aulas: Programação Para Hacking
 
-# Controllers
+### Projeto
+Sistema de autenticação - Hacking Club
+API Rest
+<<<<<<< HEAD
+Arquitetura Padrão MVC
+
+### Controllers
 - Autenticação
 - Views
 
-# Models
+<<<<<<< HEAD
+### Models - Banco de dados
+- User.php
 
 ### Views
 - Login

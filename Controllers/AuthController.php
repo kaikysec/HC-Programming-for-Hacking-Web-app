@@ -6,9 +6,13 @@ Class AuthController {
     public $username; //Nome do usuario
     public $user_id; //ID do usuario
 
-    public function login($usernamem, $password) {
+    public function login($username, $password) {
 
-        return "Tela de login!";
+        if($username == 'admin' && $password == '1234'){
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public function register($username, $password) {

@@ -18,12 +18,19 @@ switch($route){
         break;
 
     case '/login':
-        if($_SERVER['REQUST_METHOD'] == 'POST'){
+        if($_SERVER['REQUEST_METHOD'] == 'POST'){
             // implementar a arquitetura do JSON na rota (JS)
             $request = file_get_contents('php://input'); // php input vai ler tudo o que ta vindo na requisicao http do usuario
+            // Deserialização pegar o JSON e transformar dnv em objeto
+            $data_obj = json_decode($request);
             
-
-
+            $auth = new AuthController();
+            $result = $auth->login($data_obj->username, $data_obj->password);
+            if($result) {
+                echo "Login realizado com sucesso!";
+            } else {
+                echo "Login ou senha inválidos";
+            }
 
         } else {
             $controller = new ViewController();
